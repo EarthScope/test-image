@@ -1,0 +1,10 @@
+include:
+  - project: earthscope/infrastructure/gitlab-ci
+    ref: "CLOUD-444-pub-ecr"
+    file: project-template-image.yml
+#  - local: gitlab-ci/project-template-image.yml
+
+variables:
+#  AUTOMATICALLY_RELEASE_SCHEDULED_BUILDS: "true"
+  CONTAINER_REGISTRY_PLATFORM: "AWS-PUB"
+  GITLAB_CI_LOG_LEVEL: "DEBUG"
